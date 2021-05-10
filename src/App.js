@@ -34,10 +34,3 @@ function App() {
 }
 
 export default App;
-{/*  Tinker cards */}
-
-{/*  Button below tinder cards */}
-
-{/*  chat screen */}
-
-{/*  individual chat screen */}

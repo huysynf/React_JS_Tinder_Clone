@@ -4,17 +4,7 @@ import './TinderCard.css';
 import database from './firebase';
 
 function TinderCards() {
-  const [people, setPeople] = useState([
-    {
-      name: ' huyhq',
-      url: 'https://picsum.photos/200',
-    },
-
-    {
-      name: 'haqhuy',
-      url: 'https://picsum.photos/200',
-    },
-  ]);
+  const [people, setPeople] = useState([]);
 
   useEffect(() => {
   const unsubscribe =   database
@@ -29,7 +19,6 @@ function TinderCards() {
 
   return (
       <div className={'tinderCards'}>
-        <p>Tinder card</p>
         <div className="tinderCards__cardContainer">
           {people.map(person => {
             return (
