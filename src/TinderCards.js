@@ -4,18 +4,23 @@ import './TinderCard.css';
 import database from './firebase';
 
 function TinderCards() {
-  const [people, setPeople] = useState([]);
+  const [people, setPeople] = useState([
+    {
+      name:'ELON marr',
+      url: 'https://picsum.photos/200'
+    }
+  ]);
 
-  useEffect(() => {
-  const unsubscribe =   database
-      .collection('people')
-      .onSnapshot(snapshot => {
-      let data = snapshot.docs.map(doc => doc.data());
-      setPeople(data);});
-    return () => {
-      unsubscribe();
-    };
-  }, [people]);
+  // useEffect(() => {
+  // const unsubscribe =   database
+  //     .collection('people')
+  //     .onSnapshot(snapshot => {
+  //     let data = snapshot.docs.map(doc => doc.data());
+  //     setPeople(data);});
+  //   return () => {
+  //     unsubscribe();
+  //   };
+  // }, [people]);
 
   return (
       <div className={'tinderCards'}>

@@ -1,14 +1,26 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     border: 1px solid #f9f9f9;
 }
-.header__logo{
+
+.header__logo {
     height: 30px;
     padding: 30px;
     object-fit: contain;
 }
 
-.header__icon{
+.header__icon {
     padding: 20px;
+}
+
+.user__menu {
+    top: 45px !important;
+    left: 20px !important;
+    transition: all 1s ease-in;
+}
+
+.notification__count > span.MuiBadge-anchorOriginTopRightRectangle {
+    top: 15px !important;
+    right: 21px !important;
 }
